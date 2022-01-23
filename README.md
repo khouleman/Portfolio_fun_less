@@ -6,4 +6,4 @@ The subject is : Make a free portfolio with the animations and style seen in cla
 
 It was quite fun to do it !
 
-![][/img/cards_demo.png]
+![](/img/cards_demo.png)
