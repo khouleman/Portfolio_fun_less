@@ -6,7 +6,7 @@ The subject is : Make a free portfolio with the animations and style seen in cla
 
 It was quite fun to do it !
 
-Portfolio Desktop                   |  Portfolio Mobile                 |  Social Media Cards
+Portfolio Desktop                   |  Portfolio Mobile                 |  Social Media Cards only less
 :----------------------------------:|:--------------------------------: |:---------------------------:
 ![](/img/portfolio_demo_desktop.png)|![](/img/porfolio_demo_mobile.png)| ![](/img/cards_demo.png)
 
