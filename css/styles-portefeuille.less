@@ -1,0 +1,229 @@
+.pos-portefeuille {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  position: absolute;
+  width: 150px;
+  height: 200px;
+  transition: 1s;
+
+  &:hover {
+    transform: translate(-120px);
+    transition: 1s;
+
+    & p:hover {
+      color: white;
+      transition: 1s;
+    }
+  }
+}
+
+.linkedin {
+  z-index: 1;
+  background-color: #375999;
+  top: 192px;
+}
+
+.facebook {
+  z-index: 2;
+  background-color: #3a7dc3;
+  top: 202px;
+}
+
+.twitter {
+  z-index: 3;
+  background-color: #0191d0;
+  top: 212px;
+}
+
+.github {
+  z-index: 4;
+  background-color: #026fa8;
+  top: 222px;
+}
+
+.pinterest {
+  z-index: 5;
+  background-color: #9b0e00;
+  top: 232px;
+}
+
+.google {
+  z-index: 6;
+  background-color: #e55634;
+  top: 242px;
+}
+
+.img-google {
+  padding: 30px 0 0 0;
+  width: 70px;
+  height: auto;
+  max-height: 100%;
+  transition: 1s;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.text-google {
+  margin: 0;
+  padding: 20px 0 0 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  color: #adadad;
+  height: 50%;
+  transition: 1s;
+}
+
+.h-50 {
+  height: 50%;
+}
+
+
+.img-google:hover {
+  transition: .5s;
+  filter: brightness(0) invert(1);
+}
+
+input:checked[type="checkbox"] {
+  & ~ .pos-portefeuille {
+
+    .card {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      transition: 1s;
+      transform: rotate(20deg);
+
+      &:hover {
+        & p:hover {
+          color: white;
+          transition: 1s;
+        }
+      }
+    }
+
+    .linkedin {
+      transform-origin: bottom right;
+      transform: rotate(-55deg);
+
+      &:hover {
+        ~ .facebook {
+          transform: rotate(40deg);
+          transition: 1s;
+        }
+
+        ~ .twitter {
+          transform: rotate(50deg);
+          transition: 1s;
+        }
+
+        ~ .github {
+          transform: rotate(60deg);
+          transition: 1s;
+        }
+
+        ~ .pinterest {
+          transform: rotate(70deg);
+          transition: 1s;
+        }
+
+        ~ .google {
+          transform: rotate(80deg);
+          transition: 1s;
+        }
+      }
+    }
+
+    .facebook {
+      transform-origin: bottom right;
+      transform: rotate(-45deg);
+
+      &:hover {
+        ~ .twitter {
+          transform: rotate(50deg);
+          transition: 1s;
+        }
+
+        ~ .github {
+          transform: rotate(60deg);
+          transition: 1s;
+        }
+
+        ~ .pinterest {
+          transform: rotate(70deg);
+          transition: 1s;
+        }
+
+        ~ .google {
+          transform: rotate(80deg);
+          transition: 1s;
+        }
+      }
+    }
+
+    .twitter {
+      transform-origin: bottom right;
+      transform: rotate(-35deg);
+
+      &:hover {
+        ~ .github {
+          transform: rotate(60deg);
+          transition: 1s;
+        }
+
+        ~ .pinterest {
+          transform: rotate(70deg);
+          transition: 1s;
+        }
+
+        ~ .google {
+          transform: rotate(80deg);
+          transition: 1s;
+        }
+      }
+    }
+
+    .github {
+      transform-origin: bottom right;
+      transform: rotate(-25deg);
+
+      &:hover {
+        ~ .pinterest {
+          transform: rotate(70deg);
+          transition: 1s;
+        }
+
+        ~ .google {
+          transform: rotate(80deg);
+          transition: 1s;
+        }
+      }
+    }
+
+    .pinterest {
+      transform-origin: bottom right;
+      transform: rotate(-15deg);
+
+      &:hover {
+        ~ .google {
+          transform: rotate(80deg);
+          transition: 1s;
+        }
+      }
+    }
+
+    .google {
+      transform-origin: bottom right;
+      transform: rotate(5deg);
+    }
+
+  }
+}
